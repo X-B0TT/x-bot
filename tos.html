@@ -1,1 +1,136 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>x-bot</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="fontawestome/css/all.min.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="menu">
+      <div class="logo_holder">
+        <img src="assets/logo.png" alt="Logo">
+      </div>
+      <div class="menu_links">
+        <a href="#home" class="link">HOME</a>
+        <a href="#features" class="link">Features</a>
+        <a href="#faq" class="link">FAQ</a>
+        <a href="#commands" class="link">Commands</a>
+        <a href="#" class="link">Docs</a>
+      </div>
+      <div class="menu_icon">
+        <span class="icon"></span>
+      </div>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="frame">
+      <div class="ball">
+        <img class="botimg" src="assets/bot.png" alt="Bot">
+        <div class="fram_header">
+          <h1>X-BOT</h1>
+          <p class="paragraph">Hello there! I’m a X-BOT, a community management BOT <br> Are you looking
+            to ban trolls, kick members and more? Well i am the right bot for you.</p>
+        </div>
+        <div id="container">
+          <button class="button learn-more">
+            <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+            </span>
+            <span class="button-text"> <a style="color: #1D212B;" href="meet-the-team.html">About Me</a></span>
+          </button>
+
+
+          <button class="button_add">Add to Discord
+            <i class="fa-solid fa-circle-plus fa-lg"></i>
+            <i class="fa-solid fa-right-from-bracket fa-lg"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+
+      
+
+      <p class="footer-links">
+        <br>
+        <small class="copyright">Copyright © 2018 - X-BOT Legal Team </small>
+      </p>
+
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <p><a href="#FAQ">FAQ</a></p>
+      </div>
+      <div>
+        <p><a href="">About</a></p>
+      </div>
+      <div>
+        <p><a href="">Commands</a></p>
+      </div>
+      <div>
+        <p><a href="meet-the-team.html">Meet The Team</a></p>
+      </div>
+      <div>
+        <p><a href="">Support Server</a></p>
+      </div>
+    </div>
+ 
+    <div class="footer-right">
+
+      <p class="footer-company-about">
+        <span>About the bot</span>
+        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus
+        vehicula sit amet.
+      </p>
+
+      <div class="footer-icons">
+
+        <img src="./assets/javascript.png" alt="">
+        <img src="./assets/python.png" alt="">
+        <img src="./assets/vue.png" alt="">
+        <img src="./assets/typescript.png" alt="">
+
+
+      </div>
+
+    </div>
+
+  </footer>
+  <script type="text/javascript">
+    window.addEventListener('scroll', reveal);
+
+    function reveal() {
+      var reveals = document.querySelectorAll('.reveal');
+
+      for (var i = 0; i < reveals.length; i++) {
+
+        var windowheight = window.innerHeight;
+        var revealtop = reveals[i].getBoundingClientRect().top;
+        var revealpoint = 150;
+
+        if (revealtop < windowheight - revealpoint) {
+          reveals[i].classList.add('active');
+        } else {
+          reveals[i].classList.remove('active');
+        }
+      }
+    }
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
